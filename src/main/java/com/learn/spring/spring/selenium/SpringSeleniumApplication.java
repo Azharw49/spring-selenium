@@ -7,6 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @PropertySource("classpath:${propertyFile:application}.properties")
+@PropertySource(value = "classpath:input/foo.yml", factory = YamlPropertySourceFactory.class)
 public class SpringSeleniumApplication {
 
 	public static void main(String[] args) {

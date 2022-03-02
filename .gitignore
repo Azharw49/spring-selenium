@@ -35,5 +35,5 @@ build/
 test.log
 mvnw
 mvnw.cmd
-.idea
 .mvn
+screenshot
