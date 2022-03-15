@@ -32,7 +32,7 @@ public class WebDriverConfig {
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     public WebDriver chromeDriver()
     {
-        //WebDriverManager.chromedriver().driverVersion("98.0.4758.102").setup();
+        WebDriverManager.chromedriver().driverVersion("98.0.4758.102").setup();
         return new ChromeDriver();
     }
 
